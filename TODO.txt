@@ -1,7 +1,8 @@
 TODO 02 - Yorum satırları kullanımını vurgula
 TODO 02 - Flowchartların renklerini düzelt
 TODO 02 - VsCode ve Extention list ver
-TODO 03 - GDD-template
+TODO 03 - Flowchartların renklerini düzelt
+TODO 03 - Demo GDD kısmını daha da düzenle
 TODO 04 - Proje Hiyerarşisi ve klasör mimarisi
 TODO 05 - Proje workflowu 
 TODO 06 - Applist / Tools

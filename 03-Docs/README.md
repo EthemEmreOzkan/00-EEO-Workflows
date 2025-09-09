@@ -48,41 +48,23 @@ Proje geliştirme aşamalarına göre iki ayrı doküman hazırlanır:
 
 ### 📄 Demo GDD Örnek Referansı
 
-Aşağıdaki PDF dokümanı Demo GDD hazırlanırken örnek alınmalıdır:
+Demo GDD hazırlanırken aşağıdaki referans doküman örnek alınmalıdır:
 
-**Referans Doküman**: `03-Docs/Elementory.pdf`
+> **📁 Referans Doküman**: [`03-Docs/Elementory.pdf`](Example.pdf)
 
+#### 📋 Referans Doküman Özellikleri
+- **Format**: Demo GDD standart yapısı
+- **İçerik**: 4-5 cümle ile temel açıklamalar
+- **Görsel Düzen**: Başlık hiyerarşisi ve görsel öğeler
+- **Kapsam**: MVP/Prototype seviyesi detay
 
-<div style="border: 2px solid #ddd; border-radius: 8px; padding: 20px; background-color: #f9f9f9;">
-    <h4>📖 Elementory GDD Örneği</h4>
-    
-    <!-- PDF Embed Area -->
-    <div style="text-align: center; margin: 15px 0;">
-        <iframe 
-            src="03-Docs/Elementory.pdf" 
-            width="100%" 
-            height="600px" 
-            style="border: 1px solid #ccc; border-radius: 4px;">
-            <p>PDF görüntülenemiyor. 
-               <a href="03-Docs/Elementory.pdf" target="_blank">
-                   Dokümanı buradan açabilirsiniz.
-               </a>
-            </p>
-        </iframe>
-    </div>
-    
-    <!-- Alternatif Link -->
-    <div style="text-align: center;">
-        <a href="03-Docs/Elementory.pdf" 
-           target="_blank" 
-           style="background-color: #007bff; color: white; padding: 10px 20px; 
-                  text-decoration: none; border-radius: 4px; display: inline-block;">
-            📄 PDF'i Aç
-        </a>
-    </div>
-</div>
+#### 🎯 Örnek Alınacak Bölümler
+1. **Başlık Formatları** - Hiyerarşik düzenleme
+2. **İçerik Yoğunluğu** - Kısa ve öz açıklamalar  
+3. **Görsel Entegrasyonu** - Diagram ve şema kullanımı
+4. **Bölüm Organizasyonu** - Mantıksal içerik akışı
 
-> **Not**: Bu örnek doküman Demo GDD yazımında format, içerik yapısı ve görsel düzenleme konularında rehber olarak kullanılmalıdır.
+**Not**: Bu örnek doküman Demo GDD yazımında format, içerik yapısı ve görsel düzenleme konularında rehber olarak kullanılmalıdır.
 
 ---
 
@@ -128,7 +110,7 @@ Oyunun türüne göre mekaniklerin kısa, akılda canlandırılacak şekilde yaz
 
 ## 📊 Flowcharts.md Dokümantasyonu
 
-Bu doküman [Code Style Guide](02-Code_Style/README.md)'da belirtilen flowchart türlerinin Markdown formatında tutulduğu dosyadır.
+Bu doküman [Code Style Guide](../02-Code_Style/README.md)'da belirtilen flowchart türlerinin Markdown formatında tutulduğu dosyadır.
 
 ### Flowchart Türleri ve İsimlendirme
 

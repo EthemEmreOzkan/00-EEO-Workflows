@@ -11,6 +11,16 @@ public class Inventory_System : MonoBehaviour
 public class UI_Manager : MonoBehaviour
 ```
 
+### Fonksiyon İsimlendirmesi
+**Format**: `Function_Name`
+
+```csharp
+public void Move_Player(Vector3 direction)
+public float Calculate_Distance(Transform target)
+public void Initialize_Audio_System()
+private bool Check_Ground_Contact()
+```
+
 ### Değişken İsimlendirme Sistemi
 
 #### Public/Inspector Değişkenleri
@@ -30,7 +40,7 @@ public float Jump_Force = 5.0f;
 - Kod okunabilirliğini artırır
 
 ```csharp
-private void CalculateMovement()
+private void Calculate_Movement()
 {
     float in_horizontal_input = Input.GetAxis("Horizontal");
     Vector3 in_movement_direction = new Vector3(in_horizontal_input, 0, 0);
@@ -111,13 +121,13 @@ private void Update() { }
 #endregion
 
 #region Public Methods ------------------------------------------------------------------
-public void SetMovementSpeed(float newSpeed) { }
-public void Jump() { }
+public void Set_Movement_Speed(float newSpeed) { }
+public void Jump_Player() { }
 #endregion
 
 #region Private Methods -----------------------------------------------------------------
-private void HandleInput() { }
-private void ApplyMovement() { }
+private void Handle_Input() { }
+private void Apply_Movement() { }
 #endregion
 
 #region Events --------------------------------------------------------------------------
@@ -170,10 +180,10 @@ public class Player_Movement : MonoBehaviour
 ```csharp
 public class Player_Animator_Controller : MonoBehaviour
 {
-    public void SetBool(string paramName, bool state)
+    public void Set_Bool(string paramName, bool state)
         => Player_Animator.SetBool(Animator.StringToHash(paramName), state);
     
-    public void TriggerAnimation(string triggerName)
+    public void Trigger_Animation(string triggerName)
         => Player_Animator.SetTrigger(Animator.StringToHash(triggerName));
 }
 ```
@@ -190,10 +200,11 @@ public class Player_Controller : MonoBehaviour
     public Player_Animator_Controller animator;
     public Player_Combat combat;
     
-    private void HandleMovement()
+    //*---------------------------------------------------------------------------------//
+    private void Handle_Movement()
     {
         movement.Move_To_Direction(input_direction);
-        animator.SetBool("IsWalking", true);
+        animator.Set_Bool("IsWalking", true);
     }
 }
 ```
@@ -206,7 +217,7 @@ public class Player_Controller : MonoBehaviour
 - **Konum**: `docs/` klasörü
 - **Branch**: `docs` branch'i
 - **Format**: Markdown (.md) uzantısı
-
+---
 ### 1. Genel Yapı Flowchart'ı
 Proje genelindeki script grupları arası ilişkiler:
 
@@ -224,7 +235,7 @@ graph TD
     style C fill:#fff3e0
     style D fill:#f3e5f5
 ```
-
+---
 ### 2. Obje İçi Component İlişkileri
 Tek bir GameObject içindeki component'ler arası bağlantılar:
 
@@ -242,7 +253,7 @@ graph TD
     style C fill:#fff3e0
     style D fill:#f3e5f5
 ```
-
+---
 ### 3. Script İçi Fonksiyon Akışı
 Tek script içindeki fonksiyon çağrı hiyerarşisi:
 
@@ -267,26 +278,24 @@ graph TD
 
 ### ✅ Yapılması Gerekenler
 
-| Kategori | Kural | Örnek |
+| Kategori | Format | Örnek |
 |----------|--------|--------|
-| **Class İsimlendirme** | `Class_Name` formatı | `Player_Movement` |
-| **Public Değişkenler** | `Variable_Name` formatı | `Movement_Speed` |
-| **Local Değişkenler** | `in_function_variable` formatı | `in_input_value` |
+| **Class İsimlendirme** | `Class_Name` | `Player_Movement` |
+| **Fonksiyon İsimlendirme** | `Function_Name` | `Move_Player()` |
+| **Public Değişkenler** | `Variable_Name` | `Movement_Speed` |
+| **Local Değişkenler** | `in_function_variable` | `in_input_value` |
 | **Inspector Headers** | `[Header("Sistem ---")]` | Her grup için header |
 | **Debug Bölümü** | Her script'te debug seçenekleri | `Show_Debug_Gizmos` |
 | **Region Kullanımı** | Kodları mantıksal gruplara ayır | `#region Unity Lifecycle` |
 | **Fonksiyon Ayırıcı** | `//*---*//` ile ayır | Her fonksiyon arası |
-| **Modüler Tasarım** | Her class tek sorumluluk | SRP prensibi |
-| **Flowchart Dokümantasyonu** | 3 seviye flowchart | Genel/Obje/Script |
 
 ### ❌ Yapılmaması Gerekenler
 
-- PascalCase yerine underscore kullanmamak
+- camelCase yerine underscore kullanmamak
 - Header olmadan Inspector değişkenleri gruplamak
 - Region kullanmadan uzun class'lar yazmak
 - Debug seçenekleri olmayan production kodları
 - Çoklu sorumluluk sahibi monolitik class'lar
-- Dokümantasyonsuz kompleks sistem ilişkileri
 
 ---
 
@@ -295,6 +304,7 @@ graph TD
 Bu checklist her script tamamlandığında kontrol edilmelidir:
 
 - [ ] Class ismi `Class_Name` formatında
+- [ ] Fonksiyon isimleri `Function_Name` formatında
 - [ ] Public değişkenler `Variable_Name` formatında  
 - [ ] Local değişkenler `in_function_variable` formatında
 - [ ] Inspector'da header'lar ve spacing mevcut
@@ -303,5 +313,5 @@ Bu checklist her script tamamlandığında kontrol edilmelidir:
 - [ ] Fonksiyon ayırıcıları eklenmiş
 - [ ] SOLID prensiplerine uygun modüler tasarım
 - [ ] İlgili flowchart dokümantasyonu oluşturulmuş
-
+---
 > **Not**: Bu standartlar Ethem Emre Özkan tarafından bireysel ve ufak ekip çalışmaları için bir temel oluşturulması amacıyla oluşturulmuştur.

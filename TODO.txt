@@ -1,10 +1,3 @@
-TODO 02 - Yorum satırları kullanımını vurgula
-TODO 02 - Flowchartların renklerini düzelt
-TODO 02 - VsCode ve Extention list ver
-TODO 03 - Flowchartların renklerini düzelt
-TODO 03 - Demo GDD kısmını daha da düzenle
-TODO 04 - Düzenlenilcek / Belki kod satırları çıkabilir 
-TODO 05 - Proje workflowu 
-TODO 06 - Applist / Tools
+TODO BÜTÜN LİNKLERİ BAĞLA VE TÜM DOSYALARI DÜZENLE 
 TODO .gitignore ekle
 TODO Ana menü README.md ekle // Duruma bağlı tüm dosyları README.md yap

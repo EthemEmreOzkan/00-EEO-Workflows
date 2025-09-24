@@ -183,10 +183,6 @@ graph TD
     
     H --> L[Proje Tamamlandı]
     K --> L
-    
-    style A fill:#e8f5e8
-    style G fill:#fff3e0
-    style L fill:#e3f2fd
 ```
 
 ---

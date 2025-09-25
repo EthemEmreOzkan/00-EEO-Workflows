@@ -1,3 +1,0 @@
-TODO BÜTÜN LİNKLERİ BAĞLA VE TÜM DOSYALARI DÜZENLE 
-TODO .gitignore ekle
-TODO Ana menü README.md ekle // Duruma bağlı tüm dosyları README.md yap

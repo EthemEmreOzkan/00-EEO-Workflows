@@ -20,10 +20,10 @@ Bu depo, geliştirme felsefemi ve süreçlerimi tanımlayan **altı temel doküm
 |------------|-----------|----------|
 | **[01 - Git İş Akışı](01-Git_Workflow/README.md)** | Branch stratejisi, commit standartları, merge kuralları | Versiyon kontrolü ve takım çalışması |
 | **[02 - Kod Stili](02-Code_Style/README.md)** | İsimlendirme kuralları, kod organizasyonu, Unity standartları | Okunabilir ve sürdürülebilir kod |
-| **[03 - Dokümantasyon](03-Documentation_Standards/README.md)** | GDD formatları, flowchart türleri, proje raporları | Kapsamlı proje belgelendirmesi |
-| **[04 - Klasör Mimarisi](04-Project_Architecture/README.md)** | Asset organizasyonu, hiyerarşi kuralları, object pooling | Scalable proje yapısı |
+| **[03 - Dokümantasyon](03-Docs\README.md)** | GDD formatları, flowchart türleri, proje raporları | Kapsamlı proje belgelendirmesi |
+| **[04 - Klasör Mimarisi](04-Folders-Hierarchy)** | Asset organizasyonu, hiyerarşi kuralları, object pooling | Scalable proje yapısı |
 | **[05 - Proje Aşamaları](05-Project_Workflow/README.md)** | Fikir → MVP → Release süreç akışı | Sistematik proje yönetimi |
-| **[06 - Geliştirme Araçları](06-Development_Tools/README.md)** | VS Code, Unity, AI tools, extension'lar | Verimli development environment |
+| **[06 - Geliştirme Araçları](006-Tools-Apps\README.md)** | VS Code, Unity, AI tools, extension'lar | Verimli development environment |
 
 ### 2. 🎯 Proje Portfolyosu
 
